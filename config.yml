@@ -1,14 +1,14 @@
 accounts:
   - name: alice
-    coins: ["100000000uatom", "100000000000000000000aevmos"]
+    coins: ["100000000uatom", "100000000000000000000aernest"]
   - name: bob
-    coins: ["5000000000000aevmos"]
+    coins: ["5000000000000aernest"]
 validator:
   name: alice
-  staked: "100000000000000000000aevmos"
+  staked: "100000000000000000000aernest"
 faucet:
   name: bob 
-  coins: ["10aevmos"]
+  coins: ["10aernest"]
 build:
   binary: "evmosd"
 init:
@@ -22,10 +22,10 @@ genesis:
   app_state:
     staking:
       params:
-        bond_denom: "aevmos"
+        bond_denom: "aernest"
     mint:
       params:
-        mint_denom: "aevmos"
+        mint_denom: "aernest"
     crisis:
       constant_fee:
         denom: "aevmos"
@@ -33,7 +33,7 @@ genesis:
       deposit_params:
         min_deposit:
           - amount: "10000000"
-            denom: "aevmos"
+            denom: "aernest"
     evm:
       params:
-        evm_denom: "aevmos"
+        evm_denom: "aernest"
