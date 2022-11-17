@@ -39,10 +39,44 @@ parent:
   </a>
 </div>
 
-Evmos is a scalable, high-throughput Proof-of-Stake blockchain that is fully compatible and
-interoperable with Ethereum. It's built using the [Cosmos SDK](https://github.com/cosmos/cosmos-sdk/) which runs on top of [Tendermint Core](https://github.com/tendermint/tendermint) consensus engine.
+## What is Ernest Chain
+
+Ernest Chain is a scalable, high-throughput Proof-of-Stake blockchain that is fully compatible and interoperable with Ethereum. It's built using the [Cosmos SDK](https://github.com/cosmos/cosmos-sdk/) which runs on top of [Tendermint Core](https://github.com/tendermint/tendermint) consensus engine.
+
+Ernest Chain is mainly used to support Ernest Network the first ever full web3 implementation.
+
+Ernect Chain allows for running vanilla Ethereum as a Cosmos application-specific blockchain. This allows developers to have all the desired features of Ethereum, while at the same time, benefit from Tendermint’s PoS implementation. Also, because it is built on top of the Cosmos SDK, it will be able to exchange value with the rest of the Cosmos Ecosystem through the Inter Blockchain Communication Protocol (IBC).
+
 
 **Note**: Requires [Go 1.19+](https://golang.org/dl/)
+
+## Features
+
+Here’s a glance at some of the key features of Ernest Chain:
+
+   - Web3 and EVM compatibility
+   - High throughput via [Tendermint Core](https://github.com/tendermint/tendermint)
+   - Horizontal scalability via [IBC](https://cosmos.network/ibc)
+   - Fast transaction finality
+   
+Point Chain enables these key features by:
+
+   - Being the blockchain layer for [Ernest Network](https://ernestnetwork.io/)
+
+   - Implementing Tendermint Core's Application Blockchain Interface (ABCI) to manage the blockchain
+
+   - Leveraging [modules](https://docs.cosmos.network/main/building-modules/intro.html) and other mechanisms implemented by the [Cosmos SDK](https://docs.cosmos.network/).
+
+   - Utilizing [geth](https://github.com/ethereum/go-ethereum) as a library to promote code reuse and improve maintainability.
+
+   - Exposing a fully compatible Web3 JSON-RPC layer for interacting with existing Ethereum clients and tooling (Metamask)[https://docs.pointnetwork.io/docs/point_chain/users/wallets/metamask].
+   
+The sum of these features allows developers to leverage existing Ethereum ecosystem tooling and software to seamlessly deploy smart contracts which interact with the rest of the Cosmos ecosystem!
+
+## Quick Facts
+- Ernest Chain Testnet	73287
+- Ernest Chain Mainnet	73288
+- Block Time	~2s
 
 ## Installation
 
@@ -56,23 +90,12 @@ Or check out the latest [release](https://github.com/evmos/evmos/releases).
 
 ## Quick Start
 
-To learn how the Evmos works from a high-level perspective, go to the [Introduction](https://evmos.dev/about/intro/overview.html) section from the documentation. You can also check the instructions to [Run a Node](https://evmos.dev/validators/quickstart/run_node.html).
+To learn how the Erneest Chain works from a high-level perspective, go to the [Introduction](https://evmos.dev/about/intro/overview.html) section from the documentation. You can also check the instructions to [Run a Node](https://evmos.dev/validators/quickstart/run_node.html).
 
 ## Community
 
 The following chat channels and forums are a great spot to ask questions about Evmos:
 
-- [Evmos Twitter](https://twitter.com/EvmosOrg)
-- [Evmos Discord](https://discord.gg/evmos)
-- [Evmos Forum](https://commonwealth.im/evmos)
-- [Tharsis Twitter](https://twitter.com/TharsisHQ)
+- [Ernest-Chain Twitter](https://twitter.com/ernestchain)
+- [Ernest-Chain Discord](https://discord.gg/ernestchain)
 
-## Contributing
-
-Looking for a good place to start contributing? Check out some [`good first issues`](https://github.com/evmos/evmos/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
-
-For additional instructions, standards and style guides, please refer to the [Contributing](./CONTRIBUTING.md) document.
-
-## Careers
-
-See our open positions on [Cosmos Jobs](https://jobs.cosmos.network/project/evmos-d0sk1uxuh-remote/), [Notion](https://tharsis.notion.site), or feel free to [reach out](mailto:careers@thars.is) via email.
